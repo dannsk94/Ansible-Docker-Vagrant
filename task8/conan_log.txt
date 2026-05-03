@@ -1,0 +1,69 @@
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+
+======== Input profiles ========
+Profile host:
+[settings]
+arch=x86_64
+build_type=Release
+compiler=gcc
+compiler.cppstd=gnu14
+compiler.libcxx=libstdc++11
+compiler.version=10
+os=Linux
+
+Profile build:
+[settings]
+arch=x86_64
+build_type=Release
+compiler=gcc
+compiler.cppstd=gnu14
+compiler.libcxx=libstdc++11
+compiler.version=10
+os=Linux
+
+
+======== Computing dependency graph ========
+Graph root
+    conanfile.py (test_conan/1.0): /home/vagrant/project/task8/conanfile.py
+Requirements
+    fmt/10.1.1#021e170cf81db57da82b5f737b6906c1 - Cache
+
+======== Computing necessary packages ========
+Requirements
+    fmt/10.1.1#021e170cf81db57da82b5f737b6906c1:329b3f931fcf4df166f2305ec2726eb4b27190d5#d32573f4abd31d2b7225554c58f79191 - Cache
+
+======== Installing packages ========
+fmt/10.1.1: Already installed! (1 of 1)
+
+======== Finalizing install (deploy, generators) ========
+conanfile.py (test_conan/1.0): Writing generators to /home/vagrant/project/task8/build_conan/build/Release/generators
+conanfile.py (test_conan/1.0): Generator 'CMakeDeps' calling 'generate()'
+conanfile.py (test_conan/1.0): CMakeDeps necessary find_package() and targets for your CMakeLists.txt
+    find_package(fmt)
+    target_link_libraries(... fmt::fmt)
+conanfile.py (test_conan/1.0): Generator 'CMakeToolchain' calling 'generate()'
+conanfile.py (test_conan/1.0): CMakeToolchain generated: conan_toolchain.cmake
+conanfile.py (test_conan/1.0): CMakeToolchain: Preset 'conan-release' added to CMakePresets.json.
+    (cmake>=3.23) cmake --preset conan-release
+    (cmake<3.23) cmake <path> -G "Unix Makefiles" -DCMAKE_TOOLCHAIN_FILE=generators/conan_toolchain.cmake  -DCMAKE_POLICY_DEFAULT_CMP0091=NEW -DCMAKE_BUILD_TYPE=Release
+conanfile.py (test_conan/1.0): CMakeToolchain generated: /home/vagrant/project/task8/build_conan/build/Release/generators/CMakePresets.json
+conanfile.py (test_conan/1.0): CMakeToolchain generated: /home/vagrant/project/task8/CMakeUserPresets.json
+conanfile.py (test_conan/1.0): Generating aggregated env files
+conanfile.py (test_conan/1.0): Generated aggregated env files: ['conanbuild.sh', 'conanrun.sh']
+Install finished successfully
+-- Using Conan toolchain: /home/vagrant/project/task8/build_conan/build/Release/generators/conan_toolchain.cmake
+-- Conan toolchain: Defining architecture flag: -m64
+-- Conan toolchain: C++ Standard 14 with extensions ON
+-- Conan: Component target declared 'fmt::fmt'
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_TOOLCHAIN_FILE
+
+
+-- Build files have been written to: /home/vagrant/project/task8/build_conan
+[100%] Built target test_conan
+Результат работы задания 8

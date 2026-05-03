@@ -1,0 +1,2 @@
+docker run --rm -v $(pwd):/app sqlite-builder gcc -shared -fPIC sqlite3.c -o libsqlite3.so -lpthread -ldl 2>&1 | tee dockerlog_linux.txt
+Сбокра прошла без ошибок. Все хорошо.
