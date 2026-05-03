@@ -1,3 +1,0 @@
-[ 50%] Building C object CMakeFiles/sqlite3.dir/sqlite3.c.o
-[100%] Linking C shared library libsqlite3.so
-[100%] Built target sqlite3
